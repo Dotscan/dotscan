@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DotScan Polkadot Explorer-Demo</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico">
+  </head>
+  <body>
+  	<head>
+  		<div class="topbar" style="margin-top:2px">  		
+  						<select style="float:right; margin-right:20px; margin-top:5px">
+                <option>ENG</option>
+                <option>中文</option>                
+              </select>
+  		</div>	
+  		<div class="layerone">
+  			<h1><a href="index.html"><img alt="logo" src="img/dotlogo.jpg" style="float:left" width="150px" height="40px" /></a></h1>
+  			<div style="display: inline;"> 	  
+  				 <input class="button" type="submit" value="GO" style="padding: 3px 6px 3px 6px; background-color:#d75ea1; height: 32px; width: 41px;float:right;margin-right:10px " >            
+           <input id="searchbox" type="text" class="form-control-custom ui-autocomplete-input" placeholder="Search by Address / Txhash / Block / Token / Ens" name="q" maxlength="150" style="width: 400px; height: 31px; float:right;margin-right:1px" autocomplete="off">
+           
+         </div>	
+  		</div>
+
+        <ul>         
+          <li style="float:right"><a href="#transfr">TRANSFER</a></li>
+          <li style="float:right"><a href="#validators">VALIDATORS</a></li>
+          <li style="float:right"><a href="#blocks">BLOCKS</a></li>
+          <li style="float:right;margin-right:10px"><a href="#home">HOME</a></li>
+        </ul>
+  	</head>
+  	<div class="profilebody" >
+  		<span id="announcement">
+  			<b>Service Announcement</b>
+  			:  Welcome to Dotscan, a Polkadot Block Muti-Chain Explorer!
+  			<br>
+  			<br>
+  		</span>
+  		<div class="summary_box" >
+				<h1><a href="https://polkadot.js.org/api/examples/promise/" traget="blank">LAST BLOCK</a></h1>
+
+  		</div>
+  		<div class="pricehis" >
+  			<div id="pricechart">
+  				<h1><a>Transaction History Curve in 15 days</a></h1>
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<div class="spacegap">  		
+  	</div>  	
+  	<div id="details">
+  		<div id="content-right" class="content-right">
+				<h1>VALIDATORS</h1>
+      </div>
+      <div id="content-left" class="content-left">
+				<div class="ui--IdentityIcon ui--AddressRow-icon">
+
+					<h1>BLOCKS</h1>
+				</div>    	  	
+    	</div>
+      </div>
+  	</div>
+
+    <!--<h1><a href="https://polkadot.js.org/api/examples/promise/" traget="blank">HAIWWHAI TEST</a> for calls to the Polkadot{JS} API</h1>-->
+    <!--<div id="content" class="content"></div>-->
+      
+  </body>
+</html>

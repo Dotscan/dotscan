@@ -1,0 +1,220 @@
+html *{
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content:center;
+  min-height: 120vh;
+  width: 100vw;
+}
+
+.topbar{
+  height:10px;   
+}
+.node_info{
+  float:right;
+  margin-right:10px;
+  margin:0 auto
+
+}
+
+.details{
+	margin-right: 20px;
+	margin-left: 20px; 
+}
+.content-right {
+	background-color: #c4c3c3;
+	float:right;
+	margin-right: 20px;
+	width: 47%;
+	height:30vw;
+}
+.content-left {
+	background-color: #c4c3c3;
+	float:left;
+	margin-left: 20px;
+	width: 47%;
+	height:60vw;
+  overflow-y: scroll;
+  
+}
+.wrapper {
+  border: 1px solid #4e4e4e;
+  background-color: #c4c3c3;
+  padding: 20px;
+  height: 50vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+.profilebody{
+	margin-right: 20px;
+	margin-left: 20px; 
+}
+
+.summary_box{
+	background-color: #c4c3c3;
+	float:left;
+	margin-left: 20px;
+	width: 47%;
+	height:15vw;
+}
+.BlockNo{
+  font-size:2rem;
+}
+#last_block{
+  font-size:3rem;
+  float:left;
+  margin-left:5%;
+}
+.pricehis{
+	background-color: #c4c3c3;
+  float:right;
+	margin-right: 20px;
+	width: 47%;
+	height:15vw;
+}
+.Session{
+  float:left;
+  margin-left: 20%;
+  font-size:3rem;
+}
+.Session_len{
+  float:left;
+}
+.Session_index{
+  float:right;
+  margin-right:5%;
+  font-size:3rem;
+}
+.Session_curr{
+  float:left;
+}
+.Session_len{
+  float:left;
+}
+.count_up{
+  width:10px;
+  float:left;
+  margin-left:10px;
+  margin-top:25px;
+  font-size:150%;
+}
+.spacegap{
+	background-color: white;
+	height:3vw;
+}
+
+
+.listentoblockNo{
+	background-color: white;
+	float:left;
+	font-size:3rem
+}
+
+.listentoblockhash{
+	background-color: white;
+	margin-top: 10px;
+	margin-right: 5px;
+	float:right;
+	font-size:smaller;
+	
+}
+.BlockInfo{
+  background-color: white;
+  font-size:large;
+  margin-top: 5px; 
+  margin-bottom: 5px;
+  margin-right: 5px;
+  height:5vw;
+}
+
+.stateRoot{
+  float:right;
+}
+
+.extrinsicaRoot{
+  float:right;
+}
+
+.pHash{
+  float:right;
+}
+h2 {
+  margin: 0 0 20px;
+}
+
+p {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #d75ea1;
+  //font-size:250%
+}
+
+a:hover {
+  color: #cc3387;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #4d4d4d;
+}
+
+li {
+float: left;
+border-right:1px solid white;
+}
+
+li:last-child {
+border-right: 1px solid white;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 15px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #c7c7c7;
+}
+
+.active {
+background-color: #c7c7c7;
+}
+.console {
+  display: none;
+}
+<h1 style="text-align:right">
+
+
+@media screen and (max-width: 27%) {
+  .content-left {
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 27%;
+    max-height: 80vh;
+  }
+}

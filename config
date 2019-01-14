@@ -1,0 +1,4 @@
+Host github-dotscan
+HostName github.com
+User haiw
+IdentityFile ~/.ssh/id_rsa_haiw1

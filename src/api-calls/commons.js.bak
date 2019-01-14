@@ -1,0 +1,43 @@
+// Our address for Alice on the dev chain
+export const ALICE = '5GoKvZWG5ZPYL1WUovuHW3zJBWBP5eT8CbqjdRY4Q6iMaDtZ';
+export const BOB = '5Gw3s7q4QLkSWwknsiPtjujPv3XM4Trxi5d4PgKMMk3gfGTE';
+
+
+
+
+
+           
+   export const createWrapper = (wrapperClass, headline) => {
+   	const app = document.querySelector('#content-left');	
+
+	 //创建一个div  
+   var div = document.createElement("div");
+   div.id = "blockdetails";
+   //为div创建属性class = "viewPoint"  
+   var divattr = document.createAttribute("class");
+   divattr.value = "blockdetails";
+   //把属性class = "viewPoint"添加到div  
+   div.setAttributeNode(divattr);
+   app.appendChild(div); 
+   	   const app2 = document.querySelector('#blockdetails'); 
+   const div2 = document.createElement('div');
+   //const head = document.createElement('h2');
+   //head.textContent = headline || wrapperClass;
+   div2.classList.add(wrapperClass);
+   //div.append(head);
+
+   app2.appendChild(div2);
+   return div2
+   };	
+
+
+
+export const createElement = (content, element = app, className) => {
+  console.log(content);
+  const p = document.createElement('p');
+  if (className) {
+    p.classList.add(className);
+  }
+  p.innerHTML = content;
+  element.append(p);
+};
